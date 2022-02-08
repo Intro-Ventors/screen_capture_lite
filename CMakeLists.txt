@@ -22,9 +22,9 @@ else()
 endif()
 
 add_subdirectory(src_cpp) 
-add_subdirectory(src_csharp) 
+# add_subdirectory(src_csharp) // We dont need the C# build for our project.
 
-install (TARGETS screen_capture_lite_static screen_capture_lite_shared 
+install (TARGETS screen_capture_lite_static
 	RUNTIME DESTINATION bin
 	ARCHIVE DESTINATION lib
 	LIBRARY DESTINATION lib
@@ -46,10 +46,3 @@ if (NOT TARGET uninstall)
 endif()
 
 enable_testing() 
-
-if (${BUILD_EXAMPLE})
-  add_subdirectory(Example_OpenGL) 
-  add_subdirectory(Example_CPP) 
-  add_subdirectory(Example_CSharp) 
-  add_subdirectory(Example_Unity) 
-endif()
