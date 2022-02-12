@@ -270,3 +270,11 @@ src_cpp/screen_capture_lite_static.vcxproj
 src_cpp/screen_capture_lite_static.vcxproj.filters
 uninstall.vcxproj
 uninstall.vcxproj.filters
+
+# [Dhiraj] Don't include the build files.
+**/**.json
+Example_OpenGL/glfw/src/glfw3Config.cmake
+Example_OpenGL/glfw/src/glfw3ConfigVersion.cmake
+Example_OpenGL/glfw/src/glfw3.pc
+Example_OpenGL/glfw/src/glfw_config.h
+screen_capture_lite_example_csharp.exe
